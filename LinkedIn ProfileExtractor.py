@@ -17,9 +17,9 @@ from selenium.webdriver.common.by import By
 # In[2]:
 
 
-driverPath = r'C:/LinkedInData/chromedriver_win32/chromedriver.exe'
+driverPath = r'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # Chrome driver path
 os.environ["webdriver.chrome.driver"] = driverPath
-download_dirs = r'C:/LinkedInData/Profiles/'
+download_dirs = r'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # Path for downloading profiles
 
 options = webdriver.ChromeOptions()
 
@@ -28,8 +28,8 @@ options.add_experimental_option("prefs", profiles)
 
 driver = webdriver.Chrome(executable_path= driverPath, chrome_options=options)
 
-userid = 'aakashg80@gmail.com'
-password = 'C0n7r0l&P0wer'
+userid = 'XXXXXXXX@xxx.xxx' # Enter your user name & Password
+password = 'XXXXXXXXXXX'
 
 
 # In[3]:
@@ -46,7 +46,9 @@ driver.find_element_by_xpath("""//*[@id="login-submit"]""").click()
 # In[4]:
 
 
-Links = pd.read_excel('C:/LinkedInData/LinkedinLinks.xlsx')
+Links = pd.read_excel('XXXXXXXXXXXXXXXXXXXXXXXXXXX.xlsx') # File with a list of target profile links
+                                                          # File has two columns "Name"  : Name of target 
+                                                          #                      "Links" : Link to profile
 
 
 # In[5]:
